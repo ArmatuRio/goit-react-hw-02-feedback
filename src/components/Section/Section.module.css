@@ -1,0 +1,12 @@
+.Section {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.Title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 26px;
+}
