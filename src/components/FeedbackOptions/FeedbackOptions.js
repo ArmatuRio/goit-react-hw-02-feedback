@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './FeedbackOptions.module.css';
 
@@ -6,9 +7,8 @@ const FeedbackButton = ({ feedback, onLeaveFeedback }) => {
     <button
       className={styles.Button}
       type="button"
-      data-feedback={feedback}
       key={feedback}
-      onClick={onLeaveFeedback}
+      onClick={() => onLeaveFeedback(feedback)}
     >
       {feedback}
     </button>

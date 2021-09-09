@@ -13,10 +13,9 @@ class App extends Component {
     bad: 0,
   };
 
-  onLeaveFeedback = ({ target }) => {
-    const { feedback } = target.dataset;
+  onLeaveFeedback = target => {
     this.setState(prevState => ({
-      [feedback]: prevState[feedback] + 1,
+      [target]: prevState[target] + 1,
     }));
   };
 
